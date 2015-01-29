@@ -1,0 +1,24 @@
+==========================================================================
+VERB  ACTION ------------------------------------> Request Descriptor File
+==========================================================================
+
+POST  /login ------------------------------------> ./login.sh [JSON Only]
+POST  /logout -----------------------------------> ./logout.sh
+
+POST  /communities -----------------------------> POST_new-communities.sh
+POST  /communities/{communityId}/collections ---> POST_new-collections.sh
+POST  /communities/{communityId}/communities ---> POST_new-subcommunities.sh
+PUT   /communities/{communityId} ---------------> PUT_edit-communities.sh
+
+POST  /collections/{collectionId}/items ------- > POST_new-items.sh
+POST  /collections/find-collection
+PUT   /collections/{collectionId} --------------> PUT_edit-collections.sh
+
+POST  /items/find-by-metadata-field
+POST  /items/{item id}/bitstreams --------------> UPLOAD_new-bitstreams.sh
+POST  /items/{item id}/metadata ----------------> POST_add-items-metadata.sh [JSON Only]
+PUT   /items/{item id}/metadata ----------------> PUT_edit-items-metadata.sh [JSON Only]
+
+POST  /bitstreams/{bitstream id}/policy
+PUT   /bitstreams/{bitstream id}/data ----------> UPLOAD_edit-bitstreams.sh
+PUT   /bitstreams/{bitstream id} ---------------> PUT_edit-bitstreams.sh
