@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# != 4 ]; then
-  echo -e "ERRO! Wrong number parameter!"
+  echo -e "ERROR! Wrong number of parameters!"
   echo -e "USE:"
   echo -e "${0} <DSPACEURL> <TOKEN> <REQUEST_DECRIPTOR_FILE> <REQUEST_TYPE [\"json\"/\"xml\"]>"
   exit 1

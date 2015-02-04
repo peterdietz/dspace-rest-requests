@@ -1,6 +1,5 @@
-DSPACEURL="https://localhost:8443/rest"
-EMAIL="admin@dspace.com"
-PASSWORD="admin"
+#!/bin/sh
+source rest.cfg
 
 TOKEN=$(./login.sh ${EMAIL} ${PASSWORD})
 

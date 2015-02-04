@@ -1,12 +1,13 @@
+#!/bin/sh
 TOKEN=${1}
 
-DSPACEURL="https://localhost:8443/rest"
+source rest.cfg
 TYPE="json"
 VERB="POST"
 ACTION="logout"
 
 if [ $# != 1 ]; then
-  echo -e "ERROR! Wrong number parameter!"
+  echo -e "ERROR! Wrong number of parameters!"
   echo -e "USE:"
   echo -e "${0} <TOKEN>"
   exit 1
@@ -22,3 +23,6 @@ curl -k -4 \
   -H "accept: application/${TYPE}" \
   -H "Content-Type: application/${TYPE}" \
   -X ${VERB} "${DSPACEURL}/${ACTION}"
+
+echo ""
+echo "Logout occurred. No output means success, error output means error"

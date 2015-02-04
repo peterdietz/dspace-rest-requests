@@ -19,6 +19,16 @@ RQST_JSON='
 ]
 '
 
-RQST_XML='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-???
-'
+RQST_XML=RQST_XML='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<list>
+    <metadataentry>
+        <key>dc.contributor.author</key>
+        <value>Gates, Bill</value>
+        <language>en</language>
+    </metadataentry>
+    <metadataentry>
+        <key>dc.description.abstract</key>
+        <value>Technology changed by XML</value>
+        <language>en_US</language>
+    </metadataentry>
+</list>'

@@ -4,4 +4,4 @@
 
 VERB="POST"
 ACTION="items/11/bitstreams"
-FILE="/home/bruno/C3SL/projeto-mec/testes-rest/v_ShellScript/requests/files/pdf1.pdf"
+FILE="requests/files/pdf1.pdf"
